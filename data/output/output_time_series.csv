@@ -1,4 +1,4 @@
-,gas_price,power_price,cgu1.bin,cgu1.gas,cgu1.power,cgu1.heat,cgu2.bin,cgu2.gas,cgu2.power,cgu2.heat
+,gas_price,power_price,chp1.bin,chp1.gas,chp1.power,chp1.heat,chp2.bin,chp2.gas,chp2.power,chp2.heat
 0,16,21,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 1,16,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 2,16,22,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

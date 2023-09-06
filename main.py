@@ -32,14 +32,14 @@ m.t = Set(ordered=True)
 m.gas_price = Param(m.t)
 m.power_price = Param(m.t)
 
-m.cgu1 = Block(rule=block.cgu_block_rule)
-m.cgu2 = Block(rule=block.cgu_block_rule)
+m.chp1 = Block(rule=block.chp_block_rule)
+m.chp2 = Block(rule=block.chp_block_rule)
 
 
 def obj_expression(m):
     """ Objective Function """
-    return (quicksum((m.cgu1.gas[t] + m.cgu2.gas[t]) * m.gas_price[t] for t in m.t) -
-            quicksum((m.cgu1.power[t] + m.cgu2.power[t]) * m.power_price[t] for t in m.t))
+    return (quicksum((m.chp1.gas[t] + m.chp2.gas[t]) * m.gas_price[t] for t in m.t) -
+            quicksum((m.chp1.power[t] + m.chp2.power[t]) * m.power_price[t] for t in m.t))
 
 
 m.obj = Objective(

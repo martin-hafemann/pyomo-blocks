@@ -2,15 +2,15 @@ import pandas as pd
 from pyomo.environ import *
 
 
-# Get input parameters for the cgu
+# Get input parameters for the chp
 data = pd.read_csv(
-    'data/assets/BHKWHilde.csv',
+    'data/assets/chp.csv',
     index_col=0
 )
 
 
-def cgu_block_rule(block):
-    """Rule for creating a cgu block with default components and constraints."""
+def chp_block_rule(block):
+    """Rule for creating a chp block with default components and constraints."""
     # Get index from model
     t = block.model().t
 
